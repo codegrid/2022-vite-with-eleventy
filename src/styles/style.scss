@@ -1,0 +1,10 @@
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
