@@ -8,3 +8,26 @@ button {
     text-decoration: underline;
   }
 }
+
+dialog[open] {
+  display: grid;
+  grid-template:
+    "icon name" 20px
+    "icon desc" auto / 120px 480px;
+  grid-gap: 20px;
+
+  img {
+    grid-area: icon;
+    width: 120px
+  }
+
+  h2 {
+    grid-area: name;
+    height: 20px;
+    margin: 0;
+  }
+
+  p {
+    grid-area: desc;
+  }
+}
